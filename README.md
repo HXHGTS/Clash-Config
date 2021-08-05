@@ -1,2 +1,2 @@
 # Clash-Config
-CFW/CDN常用配置文件
+Clash for Windows/Clash dot Net常用配置文件
