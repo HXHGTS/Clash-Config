@@ -1,0 +1,39 @@
+mixin: 
+ dns:
+  enable: true
+  enhanced-mode: redir-host
+  listen: :53
+  ipv6: false
+  default-nameserver:
+   - tcp://223.5.5.5:53
+   - tcp://223.6.6.6:53
+   #- tcp://119.29.29.29:53
+   #- tcp://182.254.116.116:53
+   #- tcp://182.254.118.118:53
+   #- tcp://119.28.28.28:53
+  nameserver:
+   - tcp://223.5.5.5:53
+   - tcp://223.6.6.6:53
+   #- tcp://119.29.29.29:53
+   #- tcp://119.28.28.28:53
+  fallback:
+   - tcp://208.67.222.222:5353
+   - tcp://208.67.222.222:443
+   - tcp://208.67.220.222:5353
+   - tcp://208.67.220.222:443
+   - tcp://208.67.222.220:5353
+   - tcp://208.67.222.220:443
+   - tcp://208.67.220.220:5353
+   - tcp://208.67.220.220:443
+   - tls://8.8.8.8:853
+   - tls://8.8.4.4:853
+   - tls://1.0.0.1:853
+  fallback-filter:
+   geoip: true
+ tun:
+  enable: true
+  stack: system
+  dns-hijack:
+   - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true
