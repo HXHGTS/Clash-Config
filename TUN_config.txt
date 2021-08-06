@@ -29,6 +29,9 @@ mixin:
    - tcp://9.9.9.10:9953
   fallback-filter:
    geoip: true
+   ipcidr:
+   - 0.0.0.0/32
+   - 240.0.0.0/4
  tun:
   enable: true
   stack: system
