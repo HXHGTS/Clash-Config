@@ -1,7 +1,7 @@
 # Clash-Config
 
 <h1 align="center">
-  <img src="https://github.com/HXHGTS/Clash-Config/blob/main/logo_64.png?raw=true" width="30%" height="30%">
+  <img src="https://github.com/HXHGTS/Clash-Config/blob/main/logo_64.png?raw=true" width="5%" height="5%">
 </h1>
 
 Clash for Windows/Clash dot Net常用配置文件
