@@ -3,7 +3,7 @@ mixin:
   enable: true
   enhanced-mode: redir-host
   listen: :53
-  ipv6: true
+  ipv6: false
   default-nameserver:
    - tcp://223.5.5.5:53
    - tcp://223.6.6.6:53
