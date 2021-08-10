@@ -52,6 +52,3 @@ mixin:
    - tls://101.101.101.101:853
   fallback-filter:
    geoip: true
-   ipcidr:
-   - 0.0.0.0/32
-   - 240.0.0.0/4
