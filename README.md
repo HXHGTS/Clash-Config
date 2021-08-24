@@ -1,7 +1,7 @@
 # Clash-Config
 
 <h1 align="center">
-  <img src="https://github.com/HXHGTS/Clash-Config/blob/main/logo_64.png?raw=true" width="5%" height="5%">
+  <img src="https://cdn.jsdelivr.net/gh/HXHGTS/Clash-Config/logo_64.png" width="5%" height="5%">
 </h1>
 
 Clash for Windows/Clash dot Net常用配置文件
@@ -18,8 +18,8 @@ Clash for Windows/Clash dot Net常用配置文件
 
 ### 3.TUN模式mixin文件:
 
-[下载地址](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TUN_config.txt)
+[下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/Clash-Config/TUN_config.txt)
 
 ### 4.TAP模式mixin文件:
 
-[下载地址](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TAP_config.txt)
+[下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/Clash-Config/TAP_config.txt)
