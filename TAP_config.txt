@@ -1,4 +1,3 @@
-
 mixin: 
  dns:
   enable: true
