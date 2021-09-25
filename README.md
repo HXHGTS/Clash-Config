@@ -16,10 +16,10 @@ Clash for Windows/Clash dot Net常用配置文件
 1. 下载.bat文件[下载地址](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/service_install.bat),以管理员权限运行，重启计算机
 2. Service Mode卸载完成,地球变灰
 
-### 3.TUN模式mixin文件:
+### 3.TUN模式mixin文件(适用于Clash for Windows/Clash dot Net):
 
 [下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/Clash-Config/TUN_config.txt)
 
-### 4.TAP模式mixin文件:
+### 4.TAP模式mixin文件(仅适用于Clash for Windows):
 
 [下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/Clash-Config/TAP_config.txt)
