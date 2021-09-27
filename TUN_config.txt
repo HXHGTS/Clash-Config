@@ -62,6 +62,8 @@ mixin:
    #- https://dns.twnic.tw/dns-query
   fallback-filter:
    geoip: true
+   ipcidr:
+    - 240.0.0.0/4
  tun:
   enable: true
   stack: system
