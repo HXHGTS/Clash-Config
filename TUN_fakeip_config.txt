@@ -1,0 +1,86 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@HXHGTS 
+HXHGTS
+/
+Clash-Config
+Public
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Clash-Config/TUN_config.txt
+@HXHGTS
+HXHGTS Update TUN_config.txt
+Latest commit 8e99e26 on 18 Oct
+ History
+ 1 contributor
+66 lines (66 sloc)  1.33 KB
+   
+mixin: 
+ dns:
+  enable: true
+  enhanced-mode: fake-ip
+  listen: :53
+  ipv6: false
+  default-nameserver:
+   - 223.5.5.5
+   - 223.6.6.6
+   #- 223.87.253.100
+   #- 223.87.253.253
+  nameserver:
+   - 223.5.5.5
+   - 223.6.6.6
+   #- 223.87.253.100
+   #- 223.87.253.253
+  fallback:
+  # Google DNS:
+   #- tls://8.8.8.8:853
+   #- tls://8.8.4.4:853
+   #- tls://[2001:4860:4860::8888]:853
+   #- tls://[2001:4860:4860::8844]:853
+  # Cloudflare DNS:
+   #- tls://1.0.0.1:853
+   #- tls://[2606:4700:4700::1111]:853
+   #- tls://[2606:4700:4700::1001]:853
+  # OpenDNS:
+   - 208.67.222.222:5353
+   - 208.67.220.222:5353
+   - 208.67.222.220:5353
+   - 208.67.220.220:5353
+   #- https://doh.opendns.com/dns-query
+  # IBM Quad9 DNS
+   #- 9.9.9.10:9953
+   #- 149.112.112.10:9953
+  # NextDNS
+   #- 45.90.28.12:5353
+   #- 45.90.30.12:5353
+  # Adguard DNS
+   #- 176.103.130.130:5353
+   #- 176.103.130.131:5353
+  # Quad101 DNS
+   #- tls://101.101.101.101:853
+   #- https://dns.twnic.tw/dns-query
+  fakeip-filter:
+   - dns.msftncsi.com
+   - www.msftncsi.com
+   - www.msftconnecttest.com
+ tun:
+  enable: true
+  stack: gvisor #system
+  dns-hijack:
+   - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true
