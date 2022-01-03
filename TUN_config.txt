@@ -1,4 +1,6 @@
 mixin: 
+ hosts:
+  'www.msftconnecttest.com': 23.48.201.10
  dns:
   enable: true
   enhanced-mode: redir-host
@@ -48,6 +50,7 @@ mixin:
     - 240.0.0.0/4
     - 0.0.0.0/32
     - 127.0.0.1/32
+    - ::/128
    domain:
     - +.google.com
     - +.facebook.com
