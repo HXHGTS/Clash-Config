@@ -10,8 +10,6 @@ mixin:
   default-nameserver:
    - tls://223.5.5.5:853
    - tls://223.6.6.6:853
-   - https://223.5.5.5/dns-query
-   - https://223.6.6.6/dns-query
   nameserver:
    - tls://223.5.5.5:853
    - tls://223.6.6.6:853
