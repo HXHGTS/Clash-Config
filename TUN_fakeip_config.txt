@@ -1,22 +1,15 @@
-mixin:  
- hosts:
-  'www.msftconnecttest.com': 23.48.201.10
-  'www.msftncsi.com': 211.239.236.11
+mixin:
  dns:
   enable: true
   enhanced-mode: fake-ip
   listen: :53
   ipv6: false
   default-nameserver:
-   - 223.5.5.5
-   - 223.6.6.6
-   #- 223.87.253.100
-   #- 223.87.253.253
+   - tls://223.5.5.5:853
+   - tls://223.6.6.6:853
   nameserver:
-   - 223.5.5.5
-   - 223.6.6.6
-   #- 223.87.253.100
-   #- 223.87.253.253
+   - tls://223.5.5.5:853
+   - tls://223.6.6.6:853
   fallback:
   # Google DNS:
    #- tls://8.8.8.8:853
