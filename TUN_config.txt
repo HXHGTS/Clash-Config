@@ -17,8 +17,8 @@ mixin:
    - https://223.6.6.6/dns-query
   fallback:
    - https://doh.opendns.com/dns-query
-   - https://1.0.0.1/dns-query
-   - tls://8.8.4.4:853
+   - https://dns11.quad9.net/dns-query
+   - https://dns.twnic.tw/dns-query
   fallback-filter:
    geoip: true
    geoip-code: CN
