@@ -12,43 +12,20 @@ mixin:
    - tls://223.6.6.6:853
   fallback:
   # Google DNS:
-   #- tls://8.8.8.8:853
-   #- tls://8.8.4.4:853
-   #- tls://[2001:4860:4860::8888]:853
-   #- tls://[2001:4860:4860::8844]:853
+   #- tls://dns.google:853
   # Cloudflare DNS:
-   #- tls://1.0.0.1:853
-   #- tls://[2606:4700:4700::1111]:853
-   #- tls://[2606:4700:4700::1001]:853
+   #- https://dns.cloudflare.com/dns-query
+   #- tls://1dot1dot1dot1.cloudflare-dns.com
   # OpenDNS:
-   - 208.67.222.222:5353
-   - 208.67.220.222:5353
-   - 208.67.222.220:5353
-   - 208.67.220.220:5353
-   - 208.67.222.222:443
-   - 208.67.220.222:443
-   - 208.67.222.220:443
-   - 208.67.220.220:443
-   - [2620:119:35::35]:5353
-   - [2620:119:53::53]:5353
-   - [2620:119:35::35]:443
-   - [2620:119:53::53]:443
-   - https://doh.opendns.com/dns-query
+   #- https://doh.opendns.com/dns-query
   # IBM Quad9 DNS
-   - 9.9.9.10:9953
-   - 149.112.112.10:9953
-   - [2620:fe::10]:9953
-   - [2620:fe::fe:10]:5353
+   #- https://dns11.quad9.net/dns-query
   # NextDNS
-   #- 45.90.28.12:5353
-   #- 45.90.30.12:5353
-   #- [2a07:a8c0::a2:4eca]:5353
-   #- [2a07:a8c1::a2:4eca]:5353
+   #- tls://dns.nextdns.io:853
+   #- https://dns.nextdns.io
   # Adguard DNS
-   - 176.103.130.130:5353
-   - 176.103.130.131:5353
-   - [2a00:5a60::ad1:0ff]:5353
-   - [2a00:5a60::ad2:0ff]:5353
+   #- https://dns.adguard.com/dns-query
+   #- tls://dns.adguard.com:853
   # Quad101 DNS
    #- tls://101.101.101.101:853
    #- https://dns.twnic.tw/dns-query
