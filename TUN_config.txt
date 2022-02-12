@@ -1,7 +1,4 @@
 mixin: 
- hosts:
-  'www.msftconnecttest.com': 23.48.201.10
-  'www.msftncsi.com': 23.55.47.155
  dns:
   enable: true
   enhanced-mode: redir-host
