@@ -5,8 +5,8 @@ mixin:
   listen: :53
   ipv6: false
   default-nameserver:
-   - tls://223.5.5.5:853
-   - tls://223.6.6.6:853
+   - tls://9.9.9.10:853
+   - tls://9.9.9.11:853
   nameserver:
    - tls://223.5.5.5:853
    - tls://223.6.6.6:853
