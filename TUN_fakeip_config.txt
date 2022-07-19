@@ -3,6 +3,7 @@ mixin:
   enable: true
   enhanced-mode: fake-ip
   listen: 0.0.0.0:53
+  ipv6: true
   default-nameserver:
    - tls://223.5.5.5:853
    - tls://223.6.6.6:853 #阿里加密DNS
