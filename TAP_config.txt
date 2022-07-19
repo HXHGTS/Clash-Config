@@ -2,39 +2,29 @@ mixin:
  dns:
   enable: true
   enhanced-mode: redir-host
-  listen: :53
-  ipv6: false
+  listen: 0.0.0.0:53
+  ipv6: true
   default-nameserver:
-   - tls://9.9.9.10:853
-   - tls://9.9.9.11:853
+   - tls://223.5.5.5:853
+   - tls://223.6.6.6:853 #阿里加密DNS
+   - tls://1.12.12.12:853
+   - tls://120.53.53.53:853 #腾讯加密DNS
   nameserver:
    - tls://223.5.5.5:853
-   - tls://223.6.6.6:853
+   - tls://223.6.6.6:853 #阿里加密DNS(由于腾讯DNS对国内CDN解析效果不佳,故未在国内部署)
   fallback:
-  # Google DNS:
-   #- tls://dns.google:853
-  # Cloudflare DNS:
-   #- https://dns.cloudflare.com/dns-query
-   #- tls://1dot1dot1dot1.cloudflare-dns.com
-  # OpenDNS:
-   #- https://doh.opendns.com/dns-query
-  # IBM Quad9 DNS
-   #- https://dns11.quad9.net/dns-query
-  # NextDNS
-   #- tls://dns.nextdns.io:853
-   #- https://dns.nextdns.io
-  # Adguard DNS
-   #- https://dns.adguard.com/dns-query
-   #- tls://dns.adguard.com:853
-  # Quad101 DNS
-   #- tls://101.101.101.101:853
-   #- https://dns.twnic.tw/dns-query
+   - https://doh.opendns.com/dns-query #Cisco OpenDNS加密DNS
+   - https://dns11.quad9.net/dns-query
+   - tls://dns11.quad9.net:853 #IBM Quad9加密DNS(支持ECS)
   fallback-filter:
    geoip: true
+   geoip-code: CN
    ipcidr:
     - 240.0.0.0/4
     - 0.0.0.0/32
     - 127.0.0.1/32
+    - ::/128
+    - ::1/128
    domain:
     - +.google.com
     - +.facebook.com
@@ -44,3 +34,5 @@ mixin:
     - +.google.cn
     - +.googleapis.cn
     - +.gvt1.com
+    - +.googlevideo.com
+    - +.gstatic.com
