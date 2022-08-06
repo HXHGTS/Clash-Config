@@ -1,0 +1,46 @@
+mixin:
+  dns:
+    enable: true
+    enhanced-mode: fake-ip
+    listen: '0.0.0.0:53'
+    ipv6: true
+    default-nameserver:
+      - 'tls://223.5.5.5:853'
+      - 'tls://223.6.6.6:853' #阿里加密DNS
+    nameserver:
+      - 'tls://223.5.5.5:853'
+      - 'tls://223.6.6.6:853' #阿里加密DNS
+    fallback:
+      - 'https://doh.opendns.com/dns-query' #Cisco OpenDNS加密DNS
+      - 'https://dns11.quad9.net/dns-query' #IBM Quad9加密DNS(支持ECS)
+    fake-ip-filter:
+      - '*.msftncsi.com'
+      - '*.msftconnecttest.com'
+      - +.lan
+      - +.cn
+      - +.10010.com
+      - +.chinaunicom.com
+      - +.baidu.com
+      - '*.alipay.com'
+      - '*.alipayobjects.com'
+      - '*.jijifun.com'
+      - connect.rom.miui.com
+      - localhost.ptlogin2.qq.com
+      - dl.google.com
+      - +.stun.*.*
+      - +.stun.*.*.*
+      - +.stun.*.*.*.*
+      - +.stun.*.*.*.*.*
+      - lens.l.google.com
+      - '*.n.n.srv.nintendo.net'
+      - +.stun.playstation.net
+      - '*.mcdn.bilivideo.cn'
+      - ntp.ntsc.ac.cn
+    fallback-filter:
+      geoip: true
+      geoip-code: CN
+      ipcidr:
+        - 0.0.0.0/32
+        - 127.0.0.1/32
+        - '::/128'
+        - '::1/128'
