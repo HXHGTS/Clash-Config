@@ -1,45 +1,30 @@
-mixin: 
- dns:
-  enable: true
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:53
-  ipv6: true
-  default-nameserver:
-   - tls://223.5.5.5:853
-   - tls://223.6.6.6:853 #阿里加密DNS
-   - tls://1.12.12.12:853
-   - tls://120.53.53.53:853 #腾讯加密DNS
-  nameserver:
-   - tls://223.5.5.5:853
-   - tls://223.6.6.6:853 #阿里加密DNS(由于腾讯DNS对国内CDN解析效果不佳,故未在国内部署)
-  fallback:
-   - https://doh.opendns.com/dns-query #Cisco OpenDNS加密DNS
-   - https://dns11.quad9.net/dns-query
-   - tls://dns11.quad9.net:853 #IBM Quad9加密DNS(支持ECS)
-  fallback-filter:
-   geoip: true
-   geoip-code: CN
-   ipcidr:
-    - 240.0.0.0/4
-    - 0.0.0.0/32
-    - 127.0.0.1/32
-    - ::/128
-    - ::1/128
-   domain:
-    - +.google.com
-    - +.facebook.com
-    - +.twitter.com
-    - +.youtube.com
-    - +.xn--ngstr-lra8j.com
-    - +.google.cn
-    - +.googleapis.cn
-    - +.gvt1.com
-    - +.googlevideo.com
-    - +.gstatic.com
- tun:
-  enable: true
-  stack: gvisor #改成system可提高性能,但需要在Windows防火墙放行Clash流量
-  dns-hijack:
-   - 198.18.0.2:53
-  auto-route: true
-  auto-detect-interface: true
+mixin:
+  dns:
+    enable: true
+    enhanced-mode: redir-host
+    listen: '0.0.0.0:53'
+    ipv6: true
+    default-nameserver:
+      - 'tls://223.5.5.5:853'
+      - 'tls://223.6.6.6:853' #阿里加密DNS
+    nameserver:
+      - 'tls://223.5.5.5:853'
+      - 'tls://223.6.6.6:853' #阿里加密DNS
+    fallback:
+      - 'https://doh.opendns.com/dns-query' #Cisco OpenDNS加密DNS
+      - 'https://dns11.quad9.net/dns-query' #IBM Quad9加密DNS(支持ECS)
+    fallback-filter:
+      geoip: true
+      geoip-code: CN
+      ipcidr:
+        - 0.0.0.0/32
+        - 127.0.0.1/32
+        - '::/128'
+        - '::1/128'
+  tun:
+    enable: true
+    stack: gvisor
+    dns-hijack:
+      - '198.18.0.2:53'
+    auto-route: true
+    auto-detect-interface: true
