@@ -23,7 +23,7 @@ mixin:
         - '::1/128'
   tun:
     enable: true
-    stack: gvisor
+    stack: gvisor #改成system可提高性能,但需要在Windows防火墙放行Clash流量
     dns-hijack:
       - '198.18.0.2:53'
     auto-route: true
