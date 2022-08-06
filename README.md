@@ -18,8 +18,8 @@ Clash for Windows/Clash dot Net常用配置文件
 
 ### 3.TUN模式mixin文件(适用于Clash for Windows/Clash dot Net):
 
-[TUN模式(Real-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TUN_config.txt) [TUN模式(Fake-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TUN_config.txt)
+[TUN模式(Real-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TUN_config.txt) [TUN模式(Fake-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TUN_fakeip_config.txt)
 
 ### 4.TAP模式mixin文件(仅适用于Clash for Windows):
 
-[TAP模式(Real-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TAP_config.txt) [TAP模式(Fake-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TAP_config.txt)
+[TAP模式(Real-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TAP_config.txt) [TAP模式(Fake-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TAP_fakeip_config.txt)
