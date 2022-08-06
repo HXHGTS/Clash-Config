@@ -18,8 +18,8 @@ Clash for Windows/Clash dot Net常用配置文件
 
 ### 3.TUN模式mixin文件(适用于Clash for Windows/Clash dot Net):
 
-[下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/Clash-Config/TUN_config.txt)
+[TUN模式(Real-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TUN_config.txt) [TUN模式(Fake-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TUN_config.txt)
 
 ### 4.TAP模式mixin文件(仅适用于Clash for Windows):
 
-[下载地址](https://cdn.jsdelivr.net/gh/HXHGTS/Clash-Config/TAP_config.txt)
+[TAP模式(Real-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TAP_config.txt) [TAP模式(Fake-ip模式)](https://raw.githubusercontent.com/HXHGTS/Clash-Config/main/TAP_config.txt)
