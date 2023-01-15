@@ -5,14 +5,24 @@ mixin:
     listen: '0.0.0.0:53'
     ipv6: true
     default-nameserver:
+      - 'tls://[2400:3200::1]:853'
+      - 'tls://[2400:3200:baba::1]:853'
       - 'tls://223.5.5.5:853'
       - 'tls://223.6.6.6:853' #阿里加密DNS
+      - 'tls://1.12.12.12:853'
+      - 'tls://120.53.53.53:853' #DNSPOD加密DNS
     nameserver:
+      - 'tls://[2400:3200::1]:853'
+      - 'tls://[2400:3200:baba::1]:853'
       - 'tls://223.5.5.5:853'
       - 'tls://223.6.6.6:853' #阿里加密DNS
+      - 'tls://1.12.12.12:853'
+      - 'tls://120.53.53.53:853' #DNSPOD加密DNS
     fallback:
-      - 'https://doh.opendns.com/dns-query' #Cisco OpenDNS加密DNS
+      - 'tls://dns.google:853' #Google加密DNS(支持ECS)
+      - 'https://doh.opendns.com/dns-query' #Cisco OpenDNS加密DNS(支持ECS)
       - 'https://dns11.quad9.net/dns-query' #IBM Quad9加密DNS(支持ECS)
+      - 'https://101.101.101.101/dns-query' #TWNIC加密DNS(支持ECS)
     fake-ip-filter:
       - '*.msftncsi.com'
       - '*.msftconnecttest.com'
@@ -42,6 +52,7 @@ mixin:
       ipcidr:
         - 0.0.0.0/32
         - 127.0.0.1/32
+        - 240.0.0.0/4
         - '::/128'
         - '::1/128'
   tun:
